@@ -11,7 +11,7 @@ sec = int(secraw)
 duoshaoraw = raw_input('Blink ? num of times?: ')
 duoshao = int(duoshaoraw)
 statediffraw = raw_input('Same (0) or alternate (1): ')
-statediff = int(statediff)
+statediff = int(statediffraw)
 GPIO.setup(pin1, GPIO.OUT)
 GPIO.setup(pin2, GPIO.OUT)
 if ( statediff == 1 ):
