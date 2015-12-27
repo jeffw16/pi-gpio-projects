@@ -7,7 +7,7 @@ pin1 = int(pinraw1)
 pinraw2 = raw_input('Pin 2 number: ')
 pin2 = int(pinraw2)
 secraw = raw_input('Interval in seconds: ')
-sec = int(secraw)
+sec = float(secraw)
 duoshaoraw = raw_input('Blink ? num of times?: ')
 duoshao = int(duoshaoraw)
 statediffraw = raw_input('Same (0) or alternate (1): ')
@@ -28,4 +28,5 @@ while count < (duoshao * 2):
 	state1 = not state1
 	state2 = not state2
 	count = count + 1
+print ( 'Finished' )
 GPIO.cleanup()
