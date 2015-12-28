@@ -18,7 +18,7 @@ try:
 	duoshao = int(raw_input('How many sequences? '))
 	go = True
 	while go:
-		statediff = int(raw_input('Same (0), alternate (1), or sequential boolean (2): '))
+		statediff = int(raw_input('Same (0), alternate (1), or sequential toggle (2): '))
 		pinstate = [None]*combien
 		for k in xrange(0, len(pin)):
 			pinstate[k] = False
@@ -38,7 +38,7 @@ try:
 				for m in xrange(0, len(pin)):
 					GPIO.output(pin[m], pinstate[m])
 					pinstate[m] = not pinstate[m]
-					time.sleep(sec)
+				time.sleep(sec)
 			count = count + 1
 		time.sleep(sec)
 		queryagain = int(raw_input('Go again? Yes - 1, No, 0: '))
