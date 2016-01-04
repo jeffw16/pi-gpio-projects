@@ -1,6 +1,6 @@
 import RPi.GPIO as GPIO
 import time
-class control:
+class Control:
 	
 	# pins for
 	# left, right, forward, backward
